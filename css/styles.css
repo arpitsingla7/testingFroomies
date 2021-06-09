@@ -1,0 +1,339 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Headings */
+.big-heading {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: bold;
+  text-shadow: 0.25px 0.25px 0.2px black;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* section */
+
+.colored-section{
+  background-color: #56068c;
+  color: #fff;
+}
+
+.white-section{
+  background-color: #fff;
+}
+
+/* Navigation Bar */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+
+/* Input Form */
+#myForm {
+  margin: 5% 3% 0% 0;
+}
+
+input{
+  border-color: #fff;
+}
+
+.join-btn{
+  background-color: #ec435e;
+  border-color: #ec435e
+}
+
+.join-btn:hover{
+  background-color: #8ccd4d;
+  border-color: #8ccd4d;
+}
+
+/* ****************** Main-section (Form)---> Messages ********************** */
+.msg {
+font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin: 10px 0;
+  font-size: 1.1rem;
+  width: 95%;
+  color: #fff;
+  font-weight: 300;
+}
+
+#success-msg {
+  display: none;
+  margin: 10px 0 10px 0;
+  text-align: center;
+  background-color: #a2d670;
+  border-color: #a2d670;
+}
+
+.kudos-img{
+  margin: 0 5px 0 0;
+}
+
+/* Title section */
+
+#title .container-fluid{
+  padding: 3% 10% 7% 13%;
+  text-align: left;
+}
+
+.img-container{
+  padding-left: 40px;
+  z-index: 0;
+}
+
+.img-size {
+  width: 100%;
+  height: 400px;
+  padding-bottom: 50px;
+  margin: auto 0;
+}
+
+.img-2{
+  position: relative;
+  left: 5%;
+}
+
+.img1-heading, .img2-heading, .img3-heading{
+  color: #e5bde6;
+  font-size: 1.2rem;
+  z-index: 1;
+}
+
+.img1-heading{
+  position: relative;
+  bottom: : 15px;
+}
+
+.img2-heading{
+  position: relative;
+    top: 40px;
+}
+
+.img3-heading{
+  position: relative;
+  top: 45px;
+}
+
+/* Features section */
+#features {
+  background-color: #fff;
+  position: relative;
+  margin: 0 15%;
+
+}
+
+.each-feature {
+  padding: 15% 0;
+}
+
+.feature-image {
+  color: #a83794;
+  transform: scale(3.5);
+  margin-bottom: 50px;
+}
+
+.feature-image:hover {
+  color: #8c067f;
+}
+
+.feature-tag {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.feature-description {
+  color: #8f8f8f;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* About US */
+
+#about-us .container-fluid{
+  padding: 8% 15% 8% 15%;
+}
+
+.about-us-heading{
+  font-weight: 600;
+}
+
+#tag-line .container-fluid{
+  padding: 8% 15%;
+}
+
+.tag-line-heading{
+  font-weight: bold;
+}
+
+#cta .container-fluid{
+  padding:  7% 10% 7% 10%;
+}
+
+/* footer */
+.footer-icon {
+  padding: 2% 1.4%;
+  transform: scale(1.2);
+  color: black;
+}
+
+.footer-anchor{
+  color: black;
+}
+
+
+@media (max-width: 430px) {
+
+  #firstname{
+    margin: 0 0 23px 0;
+  }
+
+  #title .container-fluid{
+    padding: 3% 6% 7% 6%;
+  }
+
+  .big-heading {
+    text-align: center;
+    font-size: 2.8rem;
+  }
+
+  #myForm{
+    margin: 5% 8% 0 8%;
+  }
+
+  #img-container{
+    /* padding: 11% 5% 3% 5%; */
+    margin-top: 60px;
+  }
+
+
+  .img2-heading{
+    position: relative;
+    top: 52px;
+  }
+
+  .img3-heading{
+    position: relative;
+    top: 30px;
+  }
+
+  .each-feature {
+    padding: 15% 0 10% 0;
+  }
+
+}
+
+@media (max-width: 780px){
+
+
+  #firstname{
+    margin: 0 0 23px 0;
+  }
+
+  #title .container-fluid{
+    padding: 3% 10% 7% 10%;
+  }
+
+  .big-heading {
+    text-align: center;
+  }
+
+  #myForm{
+    margin: 5% 10% 0 10%;
+  }
+
+  #img-container{
+    /* padding: 11% 5% 3% 5%; */
+    margin-top: 60px;
+  }
+
+
+  .img2-heading{
+    position: relative;
+    top: 52px;
+  }
+
+  .img3-heading{
+    position: relative;
+    top: 30px;
+  }
+
+  .each-feature {
+    padding: 15% 0 10% 0;
+  }
+}
+
+@media (max-width: 1050px) and (min-width: 781px){
+
+  #title .container-fluid{
+    padding: 3% 10% 7% 10%;
+  }
+
+  .big-heading {
+    text-align: center;
+  }
+
+  #myForm{
+    margin: 5% 10% 0 10%;
+  }
+
+  .img-container{
+    margin-top: 60px;
+    padding: 0 0;
+  }
+
+  .img1-heading{
+    position: relative;
+    top: 10px;
+  }
+  .img2-heading{
+    position: relative;
+    top: 52px;
+  }
+  .img3-heading{
+    position: relative;
+    top: 10px;
+  }
+
+  .each-feature {
+    padding: 15% 0 10% 0;
+  }
+
+}
