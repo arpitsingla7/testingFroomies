@@ -1,5 +1,7 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  /* font-family: 'Exo 2', sans-serif; */
+  font-family: "Montserrat", sans-serif;
 }
 
 #title {
@@ -48,8 +50,11 @@ body {
 .mission-img1{
   /* opacity: 0.3; */
   transition: scale(0.8);
-  width: 100%;
-  max-height: 900px;
+  /* width: 100%; */
+  max-width: 100%;
+  /* max-height: 900px; */
+  width: auto;
+  height: auto;
   object-fit: cover;
   width: auto;
   display: absolute;
@@ -58,31 +63,15 @@ body {
 
 }
 .mission {
-  font-weight: bolder;
   color: #fff;
-  text-shadow: 0.5px 0.5px 1px #a71bad;
   font-size: 5rem;
-  position: relative;
-  margin: 0 50px 0 0;
-  top: 200px;
-}
-
-.mission-statement{
+  font-weight: bolder;
+  /* margin: 0 50px 0 0; */
   position: absolute;
-  top: 200px;
-  left: 8%;
-  right: 8%;
-  color: #f5e5f5;
+  top: 43.5%;
+  left: 34%;
   text-shadow: 0.5px 0.5px 1px #a71bad;
-  font-size: 3.2rem;
 }
-/* .mission-statement {
-  margin: 16px 0 0 0;
-  width: 60%;
-  text-align: center;
-  display: inline-block;
-  color:#fff;
-} */
 
 .mission2{
 font-size: 3.2rem;
@@ -109,35 +98,46 @@ font-weight: bold;
 /* Story Section */
 .story-section {
   padding: 7% 10% 7% 13%;
+  background-color: #3A0072;
 }
 
 .story-heading1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 600;
   line-height: 1.25;
   color: #f88e9e;
+  font-family: 'Exo 2', sans-serif;
 }
 
 .story-heading2 {
   line-height: 1.30;
+  font-size: 1.5rem;
   margin: 25px 0 0 0;
-  color: #fee4e7;
+  color: #fcbac5;
+  font-family: 'Exo 2', sans-serif;
 }
 
 .story-p {
-  font-size: 1.15rem;
+  font-size: 1.5rem;
   line-height: 1.6;
   margin: 20px 0 3px;
   color: #fee4e7;
   width: 80%;
+  font-family: 'Exo 2', sans-serif;
+  text-shadow: 0.5px 0.5px 1px black;
+}
+
+.bold-p{
+  color: #fcbac5;
 }
 
 .mission-img {
-  position: relative;
-  right: 50%;
-  bottom: 70px;
-  opacity: 0.5;
-  transform: scale(0.5);
+  opacity: 0.7;
+  margin: 150px 0;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
 }
 
 .img-overflow {
@@ -186,10 +186,8 @@ font-weight: bold;
   overflow: hidden;
 }
 
-.mid {
+.mid{
   margin: 10px auto 80px auto;
-  position: relative;
-  left: 300px;
 }
 
 .team-h1 {
@@ -203,8 +201,10 @@ font-weight: bold;
 
 
 .team-img{
-  width: 250px;
-  height: 250px;
+  max-width: 250px;
+  max-height: 250px;
+  width: auto;
+  height: auto;
   overflow: hidden;
   border-radius: 50%;
   text-align: center;
@@ -355,6 +355,14 @@ font-weight: bold;
   color: black;
 }
 
+.form-anchor{
+  color: black;
+}
+.form-anchor:hover{
+  text-decoration: none;
+  color: black;
+}
+
 /* footer */
 footer {
   padding: 7% 15%;
@@ -369,4 +377,12 @@ footer {
 
 .footer-anchor {
   color: black;
+}
+
+.footer-mail{
+color: #a71bad;
+}
+
+.footer-mail:hover{
+color: #56068c;
 }
