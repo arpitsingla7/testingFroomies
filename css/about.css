@@ -204,7 +204,6 @@ font-weight: bold;
   max-width: 250px;
   max-height: 250px;
   width: auto;
-  height: auto;
   overflow: hidden;
   border-radius: 50%;
   text-align: center;
@@ -385,4 +384,8 @@ color: #a71bad;
 
 .footer-mail:hover{
 color: #56068c;
+}
+
+html {
+  scroll-behavior: smooth;
 }
