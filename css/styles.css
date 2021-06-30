@@ -16,23 +16,6 @@ p {
   color: #8f8f8f;
 }
 
-/* Headings */
-.big-heading {
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-  font-size: 3.5rem;
-  line-height: 1.5;
-  font-weight: 900;
-
-}
-
-.section-heading {
-  font-size: 3rem;
-  line-height: 1.5;
-  font-weight: bold;
-  text-shadow: 0.25px 0.25px 0.2px black;
-}
-
 /* Containers */
 .container-fluid {
   padding: 7% 15%;
@@ -41,7 +24,9 @@ p {
 /* section */
 
 .colored-section{
-  background-color: #56068c;
+  /* background-color: #56068c; */
+  /* background: linear-gradient(107.56deg, rgba(86, 6, 140, 0.2) 11.76%, rgba(41, 3, 67, 0.102) 58.27%, rgba(86, 6, 140, 0.2) 100%), #FFFFFF; */
+  background: linear-gradient(107.56deg, rgba(86, 6, 140, 0.4) 11.76%, rgba(41, 3, 67, 0.24) 58.96%, rgba(86, 6, 140, 0.4) 100%), #FFFFFF;
   color: #fff;
 }
 
@@ -55,9 +40,14 @@ p {
 }
 
 .navbar-brand {
-  font-family: "Ubuntu";
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: #56068c;
+}
+
+.navbar-brand:hover{
+  color: #56068c;
 }
 
 .nav-item {
@@ -66,8 +56,68 @@ p {
 
 .nav-link {
   font-size: 1.2rem;
+  color: #56068c;
 }
 
+.nav-link:hover {
+  color: #56068c;
+}
+
+.link {
+    cursor: pointer;
+    /* font-size: 18px; */
+    position: relative;
+    white-space: nowrap;
+    /* color: var(--color-text); */
+}
+
+.link::before,
+.link::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 70%;
+    left: 0;
+    pointer-events: none;
+}
+
+.link::before {
+    content: '';
+    /* show by default */
+}
+
+.link--metis::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.link--metis:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 2);
+      color: #56068c;
+}
+
+/* Headings */
+.big-heading {
+  color:#2A272A ;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+.purple-text{
+  color: #56068c;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: bold;
+  text-shadow: 0.25px 0.25px 0.2px black;
+}
 
 /* Input Form */
 #myForm {
@@ -80,7 +130,8 @@ input{
 
 .join-btn{
   background-color: #ec435e;
-  border-color: #ec435e
+  border-color: #ec435e;
+  font-weight: 500;
 }
 
 .join-btn:hover{
@@ -114,7 +165,8 @@ font-family: "Montserrat", sans-serif;
 /* Title section */
 
 #title .container-fluid{
-  padding: 2% 10% 7% 13%;
+  /* padding: 2% 10% 7% 13%; */
+  padding: 1% 11% 7% 11%;
   text-align: left;
 }
 
@@ -130,13 +182,10 @@ font-family: "Montserrat", sans-serif;
   margin: auto 0;
 }
 
-.img-2{
-  position: relative;
-  left: 5%;
-}
 
 .img1-heading, .img2-heading, .img3-heading{
-  color: #e5bde6;
+  /* color: #56068c; */
+  color: black;
   font-size: 1.2rem;
   z-index: 1;
 }
@@ -148,7 +197,7 @@ font-family: "Montserrat", sans-serif;
 
 .img2-heading{
   position: relative;
-    top: 40px;
+    top: 20px;
 }
 
 .img3-heading{
@@ -197,7 +246,36 @@ font-family: "Montserrat", sans-serif;
 
 .about-us-heading{
   font-weight: 600;
+  /* color: #56068c; */
+  color: black;
 }
+
+
+/* testimonial section */
+#testimonials {
+  background: blue;
+}
+
+.testimonial-text {
+  color: black;
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: bold;
+  text-shadow: 0.25px 0.25px 0.2px black;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+
+
 
 #tag-line .container-fluid{
   padding: 8% 15%;

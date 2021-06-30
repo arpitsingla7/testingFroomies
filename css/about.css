@@ -5,7 +5,7 @@ body {
 }
 
 #title {
-  padding: 2% 10% 1.5% 13%;
+  padding: 1% 11% 0.5% 11%;
 }
 
 .container-fluid {
@@ -13,7 +13,9 @@ body {
 }
 
 .colored-section {
-  background-color: #56068c;
+  /* background-color: #56068c; */
+  /* background: linear-gradient(107.56deg, rgba(86, 6, 140, 0.2) 11.76%, rgba(41, 3, 67, 0.102) 58.27%, rgba(86, 6, 140, 0.2) 100%), #FFFFFF; */
+  background: linear-gradient(107.56deg, rgba(86, 6, 140, 0.4) 11.76%, rgba(41, 3, 67, 0.24) 58.96%, rgba(86, 6, 140, 0.4) 100%), #FFFFFF;
   color: #fff;
 }
 
@@ -24,9 +26,14 @@ body {
 }
 
 .navbar-brand {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: #56068c;
+}
+
+.navbar-brand:hover{
+  color: #56068c;
 }
 
 .nav-item {
@@ -35,24 +42,60 @@ body {
 
 .nav-link {
   font-size: 1.2rem;
+  color: #56068c;
+}
+
+.nav-link:hover {
+  color: #56068c;
+}
+
+.link {
+    cursor: pointer;
+    /* font-size: 18px; */
+    position: relative;
+    white-space: nowrap;
+    /* color: var(--color-text); */
+}
+
+.link::before,
+.link::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 70%;
+    left: 0;
+    pointer-events: none;
+}
+
+.link::before {
+    content: '';
+    /* show by default */
+}
+
+.link--metis::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.link--metis:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 2);
+      color: #56068c;
 }
 
 /* Mission Section */
 .mission-section {
-  /* background-color: #f5e5f5; */
   background-color: #56068c;
   text-align: center;
   position: relative;
   overflow: hidden;
-  /* padding: 200px 0 250px 0; */
 }
 
 .mission-img1{
-  /* opacity: 0.3; */
   transition: scale(0.8);
-  /* width: 100%; */
   max-width: 100%;
-  /* max-height: 900px; */
   width: auto;
   height: auto;
   object-fit: cover;
@@ -66,7 +109,6 @@ body {
   color: #fff;
   font-size: 5rem;
   font-weight: bolder;
-  /* margin: 0 50px 0 0; */
   position: absolute;
   top: 43.5%;
   left: 34%;
@@ -87,9 +129,7 @@ font-weight: bold;
   color: black;
   font-size: 2.5rem;
   line-height: 1.5;
-  /* font-weight: bold; */
   font-weight: 400;
-  /* width: 95%; */
   display: inline-block;
   text-align: center;
 }
@@ -98,41 +138,48 @@ font-weight: bold;
 /* Story Section */
 .story-section {
   padding: 7% 10% 7% 13%;
-  background-color: #3A0072;
+  /* background-color: #3A0072; */
+  background: linear-gradient(107.56deg, rgba(86, 6, 140, 0.4) 11.76%, rgba(41, 3, 67, 0.24) 58.96%, rgba(86, 6, 140, 0.4) 100%), #FFFFFF;
 }
 
 .story-heading1 {
   font-size: 3.5rem;
   font-weight: 600;
   line-height: 1.25;
-  color: #f88e9e;
+  /* color: #f88e9e; */
+  color: #3A0072;
   font-family: 'Exo 2', sans-serif;
+  text-shadow: 0.5px 0.5px 0.5px #3A0072;
 }
 
 .story-heading2 {
   line-height: 1.30;
   font-size: 1.5rem;
   margin: 25px 0 0 0;
-  color: #fcbac5;
+  /* color: #fcbac5; */
+  color: #56068C;
   font-family: 'Exo 2', sans-serif;
+  text-shadow: 0.5px 0.5px 0.5px #3A0072;
 }
 
 .story-p {
   font-size: 1.5rem;
   line-height: 1.6;
   margin: 20px 0 3px;
-  color: #fee4e7;
+  /* color: #fee4e7; */
+  color: #000;
   width: 80%;
   font-family: 'Exo 2', sans-serif;
-  text-shadow: 0.5px 0.5px 1px black;
+
 }
 
 .bold-p{
-  color: #fcbac5;
+  color: #000;
+  /* text-shadow: 0.5px 0.5px 0.5px #56068C; */
 }
 
 .mission-img {
-  opacity: 0.7;
+  opacity: 1;
   margin: 150px 0;
   max-width: 100%;
   max-height: 100%;
@@ -144,11 +191,7 @@ font-weight: bold;
   overflow: hidden;
 }
 
-/* videos */
-/* .video-1, .video-2{
-  padding: 0 0 0px 0;
-  margin: 0;
-} */
+
 .video-1 {
   height: auto;
   width: 100%;
@@ -188,6 +231,11 @@ font-weight: bold;
 
 .mid{
   margin: 10px auto 80px auto;
+}
+
+.team-cont{
+  width: 80%;
+  margin: 0 auto;
 }
 
 .team-h1 {
@@ -334,10 +382,11 @@ font-weight: bold;
 }
 
 .big-heading {
-  color: #fff;
+  color: #3A0072;
   font-size: 3.5rem;
   line-height: 1.5;
   font-weight: 600;
+  text-shadow: 0.5px 0.5px 1px #56068c;
 }
 
 .form-btn {
