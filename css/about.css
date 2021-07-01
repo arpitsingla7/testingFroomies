@@ -170,10 +170,13 @@ body {
   font-family: 'Exo 2', sans-serif;
 }
 
+.rightStory{
+  margin-top: 173px;
+}
+
 .bold-p {
   color: #3A0072;
   font-weight: bolder;
-  /* text-shadow: 0.5px 0.5px 0.5px #56068C; */
 }
 
 .mission-img {
@@ -378,7 +381,7 @@ body {
 }
 
 .big-heading {
-  color: #3A0072;
+  color: black;
   font-size: 3.5rem;
   line-height: 1.5;
   font-weight: 600;
