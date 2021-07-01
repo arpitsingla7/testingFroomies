@@ -22,15 +22,14 @@ p {
 }
 
 /* section */
-
-.colored-section{
+.colored-section {
   /* background-color: #56068c; */
   /* background: linear-gradient(107.56deg, rgba(86, 6, 140, 0.2) 11.76%, rgba(41, 3, 67, 0.102) 58.27%, rgba(86, 6, 140, 0.2) 100%), #FFFFFF; */
   background: linear-gradient(107.56deg, rgba(86, 6, 140, 0.4) 11.76%, rgba(41, 3, 67, 0.24) 58.96%, rgba(86, 6, 140, 0.4) 100%), #FFFFFF;
   color: #fff;
 }
 
-.white-section{
+.white-section {
   background-color: #fff;
 }
 
@@ -40,13 +39,13 @@ p {
 }
 
 .navbar-brand {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Ubuntu";
   font-size: 2.3rem;
   font-weight: 600;
   color: #56068c;
 }
 
-.navbar-brand:hover{
+.navbar-brand:hover {
   color: #56068c;
 }
 
@@ -64,52 +63,66 @@ p {
 }
 
 .link {
-    cursor: pointer;
-    /* font-size: 18px; */
-    position: relative;
-    white-space: nowrap;
-    /* color: var(--color-text); */
+  cursor: pointer;
+  /* font-size: 18px; */
+  position: relative;
+  white-space: nowrap;
+  /* color: var(--color-text); */
 }
 
 .link::before,
 .link::after {
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background: currentColor;
-    top: 70%;
-    left: 0;
-    pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  top: 70%;
+  left: 0;
+  pointer-events: none;
 }
 
 .link::before {
-    content: '';
-    /* show by default */
+  content: '';
+  /* show by default */
 }
 
 .link--metis::before {
-    transform-origin: 100% 50%;
-    transform: scale3d(0, 1, 1);
-    transition: transform 0.3s;
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.3s;
 }
 
 .link--metis:hover::before {
-    transform-origin: 0% 50%;
-    transform: scale3d(1, 1, 2);
-      color: #56068c;
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 2);
+  color: #56068c;
 }
+
+/* star section */
+
+.starSectionRight{
+  margin: auto 0;
+}
+
 
 /* Headings */
 .big-heading {
-  color:#2A272A ;
+  color: #2A272A;
   font-family: "Montserrat", sans-serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
   line-height: 1.5;
   font-weight: 900;
 }
 
-.purple-text{
+.purple-text {
   color: #56068c;
+}
+
+.smileImg{
+  position: relative;
+  left: 92px;
+  bottom: 33px;
+  transform: scale(70%);
 }
 
 .section-heading {
@@ -124,24 +137,27 @@ p {
   margin: 5% 3% 0% 0;
 }
 
-input{
+input {
   border-color: #fff;
 }
 
-.join-btn{
+.join-btn {
+  font-family: "Roboto", sans-serif;
   background-color: #ec435e;
   border-color: #ec435e;
   font-weight: 500;
+  border-radius: 10px;
 }
 
-.join-btn:hover{
-  background-color: #8ccd4d;
-  border-color: #8ccd4d;
+.join-btn:hover {
+  background-color: #56068C;
+  border-color: #56068C;
+  color: white;
 }
 
 /* ****************** Main-section (Form)---> Messages ********************** */
 .msg {
-font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   margin: 10px 0;
   font-size: 1.1rem;
@@ -158,171 +174,149 @@ font-family: "Montserrat", sans-serif;
   border-color: #a2d670;
 }
 
-.kudos-img{
+.kudos-img {
   margin: 0 5px 0 0;
 }
 
 /* Title section */
-
-#title .container-fluid{
-  /* padding: 2% 10% 7% 13%; */
-  padding: 1% 11% 7% 11%;
+#title .container-fluid {
+  padding: 1% 9% 10% 11%;
   text-align: left;
 }
 
-.img-container{
-  padding-left: 40px;
-  z-index: 0;
+.img-container {
+  margin: 33px 0 0 0px;
 }
 
 .img-size {
   width: 100%;
-  height: 400px;
-  padding-bottom: 50px;
-  margin: auto 0;
-}
-
-
-.img1-heading, .img2-heading, .img3-heading{
-  /* color: #56068c; */
-  color: black;
-  font-size: 1.2rem;
-  z-index: 1;
-}
-
-.img1-heading{
-  position: relative;
-  bottom: : 15px;
-}
-
-.img2-heading{
-  position: relative;
-    top: 20px;
-}
-
-.img3-heading{
-  position: relative;
-  top: 45px;
+  transform: scale(1.4);
 }
 
 /* Features section */
 #features {
   background-color: #fff;
   position: relative;
-  margin: 0 15%;
-
+  margin: 0 12%;
 }
 
-.each-feature {
-  padding: 15% 0;
+.featureLeft, .featureRight{
+  margin: auto 0;
+  padding: 5% 0;
 }
 
-.feature-image {
-  color: #a83794;
-  transform: scale(3.5);
-  margin-bottom: 50px;
-}
-
-.feature-image:hover {
-  color: #8c067f;
-}
-
-.feature-tag {
+.featureProblem, .featureSolution{
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-.feature-description {
-  color: #8f8f8f;
-  width: 70%;
-  margin: 0 auto;
+.hash1{
+  font-weight: bold;
+  color: #56068C;
 }
 
-/* About US */
+.hash2{
+  font-weight: bold;
+  color: #ec435e;
+}
 
-#about-us .container-fluid{
+
+/* About US */
+#about-us .container-fluid {
   padding: 8% 15% 8% 15%;
 }
 
-.about-us-heading{
+.about-us-heading {
   font-weight: 600;
   /* color: #56068c; */
   color: black;
 }
 
-
 /* testimonial section */
 #testimonials {
-  background: blue;
+  background: #3A0072;
+}
+
+.testimonialHeading{
+  color: #f88e9e;
+  font-size: 3.5rem;
+  font-weight: 600;
+  font-family: 'Exo 2', sans-serif;
+  padding: 50px 0 0 0;
+
 }
 
 .testimonial-text {
-  color: black;
-  font-size: 3rem;
+  color: #fee4e7;
+  font-family: 'Exo 2', sans-serif;
+  text-shadow: 0.5px 0.5px 1px black;
+  font-size: 1.3rem;
   line-height: 1.5;
-  font-weight: bold;
-  text-shadow: 0.25px 0.25px 0.2px black;
 }
 
-.testimonial-image {
-  width: 10%;
-  border-radius: 100%;
-  margin: 20px;
+.highlightTestimonial{
+  font-weight: bolder;
+  color: #fcbac5;
+}
+
+.testimonial-subText {
+  color: #fff;
 }
 
 .carousel-item {
-  padding: 7% 15%;
+  padding: 3% 15% 7% 15%;
 }
 
 
-
-
-#tag-line .container-fluid{
+#tag-line .container-fluid {
   padding: 8% 15%;
 }
 
-.tag-line-heading{
+.tag-line-heading {
   font-weight: bold;
 }
 
-#cta .container-fluid{
-  padding:  7% 10% 7% 10%;
+#cta .container-fluid {
+  padding: 7% 10% 7% 10%;
 }
 
 /* footer */
+#footer .container-fluid {
+  padding: 7% 10% 2% 10%;
+}
+
 .footer-icon {
   padding: 2% 1.4%;
   transform: scale(1.2);
   color: black;
 }
 
-.footer-anchor{
+.footer-anchor {
   color: black;
 }
 
-.footer-mail{
-color: #a71bad;
+.footer-mail {
+  color: #a71bad;
 }
 
-.footer-mail:hover{
-color: #56068c;
+.footer-mail:hover {
+  color: #56068c;
 }
 
-.footer-p{
+.footer-p {
   color: black;
 }
 
-.contact-p{
+.contact-p {
   font-weight: 700;
 }
 
 @media (max-width: 430px) {
-
-  #firstname{
+  #firstname {
     margin: 0 0 23px 0;
   }
 
-  #title .container-fluid{
+  #title .container-fluid {
     padding: 3% 6% 7% 6%;
   }
 
@@ -331,22 +325,21 @@ color: #56068c;
     font-size: 2.8rem;
   }
 
-  #myForm{
+  #myForm {
     margin: 5% 8% 0 8%;
   }
 
-  #img-container{
+  #img-container {
     /* padding: 11% 5% 3% 5%; */
     margin-top: 60px;
   }
 
-
-  .img2-heading{
+  .img2-heading {
     position: relative;
     top: 52px;
   }
 
-  .img3-heading{
+  .img3-heading {
     position: relative;
     top: 30px;
   }
@@ -354,17 +347,14 @@ color: #56068c;
   .each-feature {
     padding: 15% 0 10% 0;
   }
-
 }
 
-@media (max-width: 780px){
-
-
-  #firstname{
+@media (max-width: 780px) {
+  #firstname {
     margin: 0 0 23px 0;
   }
 
-  #title .container-fluid{
+  #title .container-fluid {
     padding: 3% 10% 7% 10%;
   }
 
@@ -372,22 +362,21 @@ color: #56068c;
     text-align: center;
   }
 
-  #myForm{
+  #myForm {
     margin: 5% 10% 0 10%;
   }
 
-  #img-container{
+  #img-container {
     /* padding: 11% 5% 3% 5%; */
     margin-top: 60px;
   }
 
-
-  .img2-heading{
+  .img2-heading {
     position: relative;
     top: 52px;
   }
 
-  .img3-heading{
+  .img3-heading {
     position: relative;
     top: 30px;
   }
@@ -397,9 +386,8 @@ color: #56068c;
   }
 }
 
-@media (max-width: 1050px) and (min-width: 781px){
-
-  #title .container-fluid{
+@media (max-width: 1050px) and (min-width: 781px) {
+  #title .container-fluid {
     padding: 3% 10% 7% 10%;
   }
 
@@ -407,24 +395,26 @@ color: #56068c;
     text-align: center;
   }
 
-  #myForm{
+  #myForm {
     margin: 5% 10% 0 10%;
   }
 
-  .img-container{
+  .img-container {
     margin-top: 60px;
     padding: 0 0;
   }
 
-  .img1-heading{
+  .img1-heading {
     position: relative;
     top: 10px;
   }
-  .img2-heading{
+
+  .img2-heading {
     position: relative;
     top: 52px;
   }
-  .img3-heading{
+
+  .img3-heading {
     position: relative;
     top: 10px;
   }
@@ -432,5 +422,4 @@ color: #56068c;
   .each-feature {
     padding: 15% 0 10% 0;
   }
-
 }

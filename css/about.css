@@ -26,13 +26,13 @@ body {
 }
 
 .navbar-brand {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Ubuntu";
   font-size: 2.3rem;
   font-weight: 600;
   color: #56068c;
 }
 
-.navbar-brand:hover{
+.navbar-brand:hover {
   color: #56068c;
 }
 
@@ -50,39 +50,39 @@ body {
 }
 
 .link {
-    cursor: pointer;
-    /* font-size: 18px; */
-    position: relative;
-    white-space: nowrap;
-    /* color: var(--color-text); */
+  cursor: pointer;
+  /* font-size: 18px; */
+  position: relative;
+  white-space: nowrap;
+  /* color: var(--color-text); */
 }
 
 .link::before,
 .link::after {
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background: currentColor;
-    top: 70%;
-    left: 0;
-    pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  top: 70%;
+  left: 0;
+  pointer-events: none;
 }
 
 .link::before {
-    content: '';
-    /* show by default */
+  content: '';
+  /* show by default */
 }
 
 .link--metis::before {
-    transform-origin: 100% 50%;
-    transform: scale3d(0, 1, 1);
-    transition: transform 0.3s;
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.3s;
 }
 
 .link--metis:hover::before {
-    transform-origin: 0% 50%;
-    transform: scale3d(1, 1, 2);
-      color: #56068c;
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 2);
+  color: #56068c;
 }
 
 /* Mission Section */
@@ -93,7 +93,7 @@ body {
   overflow: hidden;
 }
 
-.mission-img1{
+.mission-img1 {
   transition: scale(0.8);
   max-width: 100%;
   width: auto;
@@ -103,8 +103,8 @@ body {
   display: absolute;
   opacity: 0.9;
   overflow: hidden;
-
 }
+
 .mission {
   color: #fff;
   font-size: 5rem;
@@ -115,12 +115,12 @@ body {
   text-shadow: 0.5px 0.5px 1px #a71bad;
 }
 
-.mission2{
-font-size: 3.2rem;
-font-weight: bold;
+.mission2 {
+  font-size: 3.2rem;
+  font-weight: bold;
 }
 
-.mission2-section{
+.mission2-section {
   background-color: #fff;
   padding: 30px 0 50px 0;
 }
@@ -134,11 +134,9 @@ font-weight: bold;
   text-align: center;
 }
 
-
 /* Story Section */
 .story-section {
   padding: 7% 10% 7% 13%;
-  /* background-color: #3A0072; */
   background: linear-gradient(107.56deg, rgba(86, 6, 140, 0.4) 11.76%, rgba(41, 3, 67, 0.24) 58.96%, rgba(86, 6, 140, 0.4) 100%), #FFFFFF;
 }
 
@@ -159,7 +157,7 @@ font-weight: bold;
   /* color: #fcbac5; */
   color: #56068C;
   font-family: 'Exo 2', sans-serif;
-  text-shadow: 0.5px 0.5px 0.5px #3A0072;
+  /* text-shadow: 0.5px 0.5px 0.5px #3A0072; */
 }
 
 .story-p {
@@ -170,11 +168,11 @@ font-weight: bold;
   color: #000;
   width: 80%;
   font-family: 'Exo 2', sans-serif;
-
 }
 
-.bold-p{
-  color: #000;
+.bold-p {
+  color: #3A0072;
+  font-weight: bolder;
   /* text-shadow: 0.5px 0.5px 0.5px #56068C; */
 }
 
@@ -191,7 +189,6 @@ font-weight: bold;
   overflow: hidden;
 }
 
-
 .video-1 {
   height: auto;
   width: 100%;
@@ -206,7 +203,6 @@ font-weight: bold;
 .video-container1 {
   margin: 0;
   background-color: #fff;
-
 }
 
 .video-container2 {
@@ -229,11 +225,11 @@ font-weight: bold;
   overflow: hidden;
 }
 
-.mid{
+.mid {
   margin: 10px auto 80px auto;
 }
 
-.team-cont{
+.team-cont {
   width: 80%;
   margin: 0 auto;
 }
@@ -247,8 +243,7 @@ font-weight: bold;
   color: black;
 }
 
-
-.team-img{
+.team-img {
   max-width: 250px;
   max-height: 250px;
   width: auto;
@@ -258,10 +253,11 @@ font-weight: bold;
   display: inline-block;
 }
 
-.team-img .t-img{
+.team-img .t-img {
   width: 100%;
   height: auto;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
 
@@ -403,22 +399,23 @@ font-weight: bold;
   color: black;
 }
 
-.form-anchor{
+.form-anchor {
   color: black;
 }
-.form-anchor:hover{
+
+.form-anchor:hover {
   text-decoration: none;
   color: black;
 }
 
 /* footer */
-footer {
-  padding: 7% 15%;
+#footer .container-fluid {
+  padding: 7% 10% 2% 10%;
   text-align: center;
 }
 
 .footer-icon {
-  padding: 2% 1.4% 3% 1.4%;
+  padding: 2% 1.4%;
   transform: scale(1.2);
   color: black;
 }
@@ -427,12 +424,12 @@ footer {
   color: black;
 }
 
-.footer-mail{
-color: #a71bad;
+.footer-mail {
+  color: #a71bad;
 }
 
-.footer-mail:hover{
-color: #56068c;
+.footer-mail:hover {
+  color: #56068c;
 }
 
 html {
